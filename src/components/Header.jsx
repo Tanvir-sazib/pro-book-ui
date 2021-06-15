@@ -10,7 +10,7 @@ const Header = () => {
     const { userInfo } = userLogin
     const logoutHandler = (e) => {
         e.preventDefault()
-        dispatch(logout()z)
+        dispatch(logout())
     }
     return (
         <header>
@@ -32,8 +32,8 @@ const Header = () => {
                                 <NavDropdown.Item onClick={logoutHandler}>Logout</NavDropdown.Item>
                             </NavDropdown>
                         ) : <LinkContainer to='/login'>
-                            <Nav.Link><i className="fas fa-user"></i> Sign in</Nav.Link>
-                        </LinkContainer>}
+                                <Nav.Link><i className="fas fa-user"></i> Sign in</Nav.Link>
+                            </LinkContainer>}
 
                     </Nav>
                 </Container>
